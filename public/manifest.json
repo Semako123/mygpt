@@ -1,0 +1,14 @@
+{
+  "name": "gpt_ext",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "webRequest"],
+  "host_permissions": ["https://chat.openai.com/*"],
+  "action": { "default_popup": "index.html" },
+  "web_accessible_resources": [
+    { "resources": ["plus.svg"], "matches": ["https://*/*"] }
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}
